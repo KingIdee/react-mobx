@@ -12,7 +12,7 @@ Screenshot of the demo app
 
 ### Clone the repository
 ```bash
-$ git clone https://github.com/yemiwebby/react-mobx.git
+$ git clone https://github.com/kingidee/react-mobx.git
 ```
 
 ### Change directory
