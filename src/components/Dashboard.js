@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
-import {observer} from "mobx-react"
+import {observer} from 'mobx-react'
 
 
 class Dashboard extends Component {
   render() {
-    const {store} = this.props
+    const {store} = this.props;
     return (
       <div className="dashboardSection">
         <div className="row">
-          <div className="col-lg-6 col-md-6">
+          <div className="col-md-6">
             <div className="card text-white bg-primary mb-6">
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-6">
-                    <i className="fa fa-comments fa-5x"></i>
-
+                    <i className="fa fa-comments fa-5x" />
                   </div>
                   <div className="col-md-6 text-right">
                     <p id="reviewCount">{store.reviewCount}</p>
@@ -25,17 +24,16 @@ class Dashboard extends Component {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6">
+          <div className="col-md-6">
             <div className="card text-white bg-success mb-6">
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-6">
-                    <i className="fa fa-star fa-5x"></i>
-
+                    <i className="fa fa-star fa-5x" />
                   </div>
                   <div className="col-md-6 text-right">
                     <p id="averageScores">{store.averageScore}</p>
-                    <p className="announcement-text"> Average Scores </p>
+                    <p className="announcement-text">Average Scores</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ export default class Form extends Component {
     const review = this.review.value;
     const stars = Number(this.stars.value);
     this.props.store.addReview({review, stars})
-  }
+  };
 
   render() {
     return (
@@ -41,12 +41,11 @@ export default class Form extends Component {
 
             <div className="col-md-4">
               <div className="form-group">
-                <button className="btn btn-success" type="submit"> SUBMIT REVIEW</button>
+                <button className="btn btn-success" type="submit">SUBMIT REVIEW</button>
               </div>
             </div>
           </div>
         </form>
-
       </div>
     )
   }
