@@ -20,11 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <Form store={reviewStore}/>
-          <Dashboard store={reviewStore}/>
-          <Reviews store={reviewStore}/>
-        </div>
+        <Form store={reviewStore}/>
+        <Dashboard store={reviewStore}/>
+        <Reviews store={reviewStore}/>
       </div>
     );
   }
