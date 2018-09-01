@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import { decorate, observable, action, computed } from "mobx";
+import {decorate, observable, action, computed} from 'mobx';
 import Form from './components/Form';
 import Dashboard from './components/Dashboard';
 import Reviews from './components/Reviews';
@@ -12,18 +12,18 @@ decorate(Store, {
   addReview: action,
   averageScore: computed,
   reviewCount: computed
-})
+});
 
-const reviewStore = new Store()
+const reviewStore = new Store();
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div>
-          <Form store={reviewStore} />
-          <Dashboard store={reviewStore} />
-          <Reviews store={reviewStore} />
+          <Form store={reviewStore}/>
+          <Dashboard store={reviewStore}/>
+          <Reviews store={reviewStore}/>
         </div>
       </div>
     );
